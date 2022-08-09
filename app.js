@@ -62,7 +62,7 @@ function createNavBar(){
 
   })
 
-  navbar.append(navLink); 
+
   
 }
 
