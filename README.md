@@ -6,7 +6,7 @@ This project was designed to create a functional dynamic landing page. For the p
 <!-- Add buttons here -->
 
 <!-- Describe your project in brief -->
-
+This project was designed to create a functional dynamic landing page. For the purposes of this specific landing page, the project focuses on a fictional company (for purposes called Harbour) and creating this landing page. The landing page features CSS styling and HTML styling. It also features a navigation bar that can be updated dynamically via javascript. Javascript is used in this project for the purposes of making this project fully functional.
 <!-- The project title should be self explanotory and try not to make it a mouthful. (Although exceptions exist- **awesome-readme-writing-guide-for-open-source-projects** - would have been a cool name)
 
 Add a cover/banner image for your README. **Why?** Because it easily **grabs people's attention** and it **looks cool**(*duh!obviously!*).
@@ -43,10 +43,11 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 # Demo-Preview
 
 <!-- Add a demo for your project -->
-
+<img width="1271" alt="Screen Shot 2022-08-10 at 9 26 55 PM" src="https://user-images.githubusercontent.com/106890286/184049677-6cd2caec-84e7-40eb-8122-63898295bb91.png">
 <!-- After you have written about your project, it is a good idea to have a demo/preview(**video/gif/screenshots** are good options) of your project so that people can know what to expect in your project. You could also add the demo in the previous section with the product description.
 
 Here is a random GIF as a placeholder.
+
 
 ![Random GIF](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif) -->
 
@@ -56,7 +57,7 @@ Here is a random GIF as a placeholder.
 
 Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README. -->
 
-- [Project Title](#project-title)
+- [Landing Page Project](#Landing-Page-Project)
 - [Demo-Preview](#demo-preview)
 - [Table of contents](#table-of-contents)
 - [Installation](#installation)
@@ -70,7 +71,7 @@ Here is a sample TOC(*wow! such cool!*) that is actually the TOC for this README
 
 # Installation
 [(Back to top)](#table-of-contents)
-
+In order to access this project, clone and open the folder LPA. From there, open the index.html in order to see the html in the browser. You can view both css and javascript from the console or open each text file individually from their respective folders. When choosing each section, the nav will highlight green. 
 <!-- *You might have noticed the **Back to top** button(if not, please notice, it's right there!). This is a good idea because it makes your README **easy to navigate.*** 
 
 The first one should be how to install(how to generally use your project or set-up for editing in their machine).
@@ -107,7 +108,7 @@ Ideally, you should keep the README simple. If you need to add more complex expl
 
 # Contribute
 [(Back to top)](#table-of-contents)
-
+- contributors can modify code by editing to display more shortcuts so that the code is not lengthy.
 <!-- This is where you can let people know how they can **contribute** to your project. Some of the ways are given below.
 
 Also this shows how you can add subsections within a section. -->
@@ -145,7 +146,7 @@ I personally add the name of the license and provide a link to it like below. --
 
 # Footer
 [(Back to top)](#table-of-contents)
-
+Project created during FrontEnd Web Development Fundamentals Nanodegree Program via Udacity and One Ten.
 <!-- Let's also add a footer because I love footers and also you **can** use this to convey important info.
 
 Let's make it an image because by now you have realised that multimedia in images == cool(*please notice the subtle programming joke). -->
