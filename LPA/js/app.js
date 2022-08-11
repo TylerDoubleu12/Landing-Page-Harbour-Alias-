@@ -60,6 +60,15 @@ function createNavBar(){
         li.classList.add("active");
         }
     }
+    
+      for(const section of sec){
+        section.onclick = ()=>{
+            for(const section of sec){
+                section.className = "";
+            }
+        sec.classList.add("active");
+        }
+    }
 
   })
 
