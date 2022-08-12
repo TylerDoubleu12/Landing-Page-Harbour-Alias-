@@ -23,61 +23,74 @@ const sec = document.querySelectorAll('section')
 const navbar = document.querySelector('navbar')
 const navLink = document.querySelector('ul');
 
+
 //build dynamic navigation menu with added Event Listeners for the List Items //
+function functionalSpace(){
+    function createNavBar(){
 
-function createNavBar(){
-
-  const navLink = document.querySelector('ul');
-  
-  sec.forEach((section)=>{
-
-    let listLink= document.createElement('li');
-    let anc = document.createElement('a');
-    anc.classList.add("active");
-    let sectdata = section.dataset.nav;
-
-    
-
-    listLink.innerHTML += `<li class="nav-item"><a class="nav-link">${sectdata}</a></li>`;
-    navLink.appendChild(listLink);
-
-    listLink.addEventListener("click", (e)=> {
-        e.preventDefault();
-        if(anc.classList.contains("active")===true){
-            section.scrollIntoView({behavior:"smooth"});
-        }
+        const navLink = document.querySelector('ul');
         
-    });
-   
-    //create active state in order to highlight each nav list item//
-    const lis = document.querySelectorAll('.navtag li');
+        sec.forEach((section)=>{
+      
+          let listLink= document.createElement('li');
+          let anc = document.createElement('a');
+          anc.classList.add("active");
+          let sectdata = section.dataset.nav;
+      
+          
+      
+          listLink.innerHTML += `<li class="nav-item"><a class="nav-link">${sectdata}</a></li>`;
+          navLink.appendChild(listLink);
+      
+          listLink.addEventListener("click", (e)=> {
+              e.preventDefault();
+              if(anc.classList.contains("active")===true){
+                  section.scrollIntoView({behavior:"smooth"});
+              }
+              
+          });
+      
+          
+         
+          //create active state in order to highlight each nav list item//
+          const lis = document.querySelectorAll('.navtag li');
+      
+          for(const li of lis){
+              li.onclick = ()=>{
+                  for(const li of lis){
+                      li.className = "";
+                  }
+              li.classList.add("active");
+              }
+          }
+      
+          
+        })
+       
+        
+      }
+      
+    createNavBar();
 
-    for(const li of lis){
-        li.onclick = ()=>{
-            for(const li of lis){
-                li.className = "";
-            }
-        li.classList.add("active");
-        }
-    }
+//create an active and remove active class//
+    function createActiveState() {
+        
+        sec.forEach((section) => {
+         
+          let sVB = section.getBoundingClientRect();
+          if (sVB.top <= 130 && sVB.bottom >= 130) {
+            const sVP = document.querySelector(`#${section.id}`);
+            sVP.classList.add('active');
+          } else {
+            const sVP =document.querySelector(`#${section.id}`);
+            sVP.classList.remove('active');
+          }
+        });
+      }
     
-      for(const section of sec){
-        section.onclick = ()=>{
-            for(const section of sec){
-                section.className = "";
-            }
-        sec.classList.add("active");
-        }
-    }
-
-  })
-
- 
-  
+      document.addEventListener('scroll', createActiveState);
 }
 
-//build nav menu//
-createNavBar();
-
+functionalSpace();
 
 
